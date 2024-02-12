@@ -24,23 +24,28 @@ function allCalculator(para1, para2, para3, para4) {
 
 function triangleCalculate(num1, num2, textId) {
   let area = 0.5 * num1 * num2;
-  displays(textId, area);
+  let testx = displays(textId, area);
+  liCreate(testx)
 }
 function rectangle(num1, num2, textId) {
   let area = num1 * num2;
-  displays(textId, area);
+  let testx = displays(textId, area);
+  liCreate(testx)
 }
 function parallogram(num1, num2, textId) {
   let area = num1 * num2;
-  displays(textId, area);
+  let testx = displays(textId, area);
+  liCreate(testx)
 }
 function rombosh(num1, num2, textId){
     let area = 0.5 * num1 * num2;
-    displays(textId, area);
+    let testx = displays(textId, area);
+    liCreate(testx)
 }
 function pentagon(num1, num2, textId){
     let area = 0.5 * num1 * num2;
-    displays(textId, area);
+    let testx = displays(textId, area);
+    liCreate(testx)
 }
 
 
@@ -50,7 +55,13 @@ function displays(textId, val) {
   return (display.innerText = val);
 }
 
-
+function liCreate(text){
+    let num = 0;
+    let ul = document.getElementById("container-set");
+    let li = document.createElement("li");
+    li.textContent = `This Result ${text}` 
+    ul.appendChild(li)
+}
 
 
 
